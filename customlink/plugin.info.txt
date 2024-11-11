@@ -1,0 +1,7 @@
+base   customlink
+author Cieron
+email  cirrow@proton.me
+date   2024-11-12
+name   Custom link generator
+desc   Custom link generator for Lore Archive
+url    https://github.com/LoreArchive/plugins/tree/main

@@ -1,0 +1,7 @@
+base   lorearchiveacademiestable
+author Cieron
+email  cirrow@proton.me
+date   2024-11-12
+name   Academies table generator
+desc   Generates "MAJOR ACADEMIES ACROSS KIVOTOS" table with highlighting
+url    https://github.com/LoreArchive/plugins/tree/main

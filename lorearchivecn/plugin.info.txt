@@ -1,0 +1,7 @@
+base   lorearchivecn
+author Cieron
+email  cirrow@proton.me
+date   2024-11-12
+name   Custom [citation needed] generator
+desc   Custom [citation needed] tag generator for Lore Archive
+url    https://github.com/LoreArchive/plugins/tree/main

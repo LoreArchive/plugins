@@ -1,0 +1,7 @@
+base   custombutton
+author Cieron
+email  cirrow@proton.me
+date   2024-11-12
+name   Custom button generator
+desc   Custom button generator for Lore Archive
+url    https://github.com/LoreArchive/plugins/tree/main
