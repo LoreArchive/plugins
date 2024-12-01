@@ -4,3 +4,4 @@ This repository is the home to **three** different aspects of the extensions mad
 ## Core Edits
 - **inc/parser/xhtml.php:** Wraps the heading inside a div
 - **inc/html.php:** Custom TOC generation code
+- **inc/template.php:** Modifies `tpl_searchform()` for custom search styling 
