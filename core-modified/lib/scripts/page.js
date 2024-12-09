@@ -3,6 +3,7 @@
  *
  * This class adds various behaviours to the rendered page
  */
+
 dw_page = {
     /**
      * initialize page behaviours
@@ -12,6 +13,8 @@ dw_page = {
         dw_page.currentIDHighlight();
         jQuery('a.fn_top').on('mouseover', dw_page.footnoteDisplay);
         dw_page.makeToggle('#dw__toc h3','#dw__toc > div');
+
+
     },
 
     /**
@@ -124,6 +127,22 @@ dw_page = {
         // now put the content into the wrapper
         dw_page.insituPopup(this, 'insitu__fn').html(content)
         .show().attr('aria-hidden', 'false');
+
+    
+        
+        const instance = tippy(jQuery(this)[0], {
+            content: content,      // Dynamically set the content
+            interactive: true,
+            placement: 'top-start',
+            allowHTML: true,
+            animation: 'shift-away',
+            theme: 'light-border',
+            appendTo: document.body, // I think this disables the kind of max-width word wrap break on the interactive tooltip
+            maxWidth: 350,
+        });
+        instance.setContent(content);
+        
+
     },
 
     /**
