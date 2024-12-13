@@ -92,12 +92,15 @@ dw_page = {
             jQuery('.dokuwiki:first').append($fndiv);
         }
 
+
+
+
         // position() does not support hidden elements
         $fndiv.show().position({
             my: 'left top',
             at: 'left center',
             of: target
-        }).hide();
+        }).hide(); 
 
         return $fndiv;
     },
@@ -128,17 +131,32 @@ dw_page = {
         dw_page.insituPopup(this, 'insitu__fn').html(content)
         .show().attr('aria-hidden', 'false');
 
-    
+
         
-        const instance = tippy(jQuery(this)[0], {
+
+
+        
+          const instance = tippy(jQuery(this)[0], {
             content: content,      // Dynamically set the content
-            interactive: true,
             placement: 'top-start',
+            interactive: true,
             allowHTML: true,
-            animation: 'shift-away',
             theme: 'light-border',
             appendTo: document.body, // I think this disables the kind of max-width word wrap break on the interactive tooltip
             maxWidth: 350,
+            onMount(instance) {
+                const box = instance.popper.firstElementChild;
+                requestAnimationFrame(() => {
+                  box.classList.add('animated');
+                  box.classList.add('wobble');
+                });
+              },
+              onHidden(instance) {
+                const box = instance.popper.firstElementChild;
+                box.classList.remove('animated');
+                box.classList.remove('wobble');
+              },
+
         });
         instance.setContent(content);
         
