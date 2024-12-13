@@ -5,4 +5,3 @@ This repository is the home to **three** different aspects of the extensions mad
 - **inc/parser/xhtml.php:** Wraps the heading inside a div, custom inline footnote generation
 - **inc/html.php:** Custom TOC generation code
 - **inc/template.php:** Modifies `tpl_searchform()` for custom search styling
-- **lib/scripts/page.js:** Tippy.js support
